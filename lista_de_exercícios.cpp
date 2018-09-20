@@ -28,3 +28,15 @@ string total_avioes(int num_pessoas, int num_avioes){
      int num_avioes = 10;
      cout <<total_avioes(num_pessoas,num_avioes);
 }
+//exercício 15
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int num_atendimentos = 20;
+    int posicao_fila = 68;
+    int num_hrs_espera;
+    num_hrs_espera = posicao_fila/ num_atendimentos;
+    cout << num_hrs_espera;
+}
