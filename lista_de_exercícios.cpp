@@ -11,3 +11,20 @@ int main() {
         var = var+2;
     }
     cout<<var;}
+//exercício 14
+#include <iostream>
+
+using namespace std;
+
+string total_avioes(int num_pessoas, int num_avioes){
+    int num_lugares = 10* num_avioes;
+    if (num_lugares>= num_pessoas){
+    return "Todos passageiros foram alocados";}
+    else {cout <<"Faltaram "<< num_pessoas - num_lugares;}
+    return "Acontece overbooking";
+}
+ int main(){
+     int num_pessoas = 100;
+     int num_avioes = 10;
+     cout <<total_avioes(num_pessoas,num_avioes);
+}
