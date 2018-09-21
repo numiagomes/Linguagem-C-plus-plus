@@ -98,3 +98,31 @@ int main (){
     }
     std::cout << max << std::endl;
 }
+
+//Exercício 20
+
+#include <iostream>
+
+using namespace std;
+
+int main (){
+    int tamanho_numeros = 10;
+    int numeros [10];
+    int  controle = 0;
+    while(controle < tamanho_numeros){
+        numeros [controle] = rand()% 50+1; // rand - gera numeros aleatorios a partir do resto de uma divisão, neste caso a divisão 
+        // por 50, para esses números estarem no intervalo de 1 a 50 coloco o +1 logo após o 50, se quiser a partir de 3 coloco +3
+        std::cout << numeros [controle] << std::endl; // vai imprimir os numeros do vetor ao longo que for gerando
+        controle ++;
+    }
+    int max = numeros[0];
+    int contador = 1;
+    ;
+    while ( contador < tamanho_numeros){
+        if (numeros [contador]> max){
+            max = numeros [contador];
+        }
+        contador ++;
+    }
+    std::cout << max << std::endl;
+}
