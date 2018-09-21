@@ -64,3 +64,37 @@ while (contador<num_partida){
     std::cout << resultado_atl << std::endl;
     std::cout << resultado_cru << std::endl;
 }
+
+
+//exercício 17
+int main (){
+    int numeros [5] = {3,5,6,8,9};
+    int max = numeros[0];
+    int contador = 1;
+    int tamanho_numeros = 5;
+    int posicao = 0;
+    while ( contador < tamanho_numeros){
+        if (numeros [contador]> max){
+            max = numeros [contador];
+            posicao = contador;
+        }
+        contador ++;
+    }
+    std::cout << posicao << std::endl;
+}
+
+
+//exercício 16
+int main (){
+    int numeros [5] = {3,5,6,8,9};
+    int max = numeros[0];
+    int contador = 1;
+    int tamanho_numeros = 5;
+    while ( contador < tamanho_numeros){
+        if (numeros [contador]> max){
+            max = numeros;
+        }
+        contador ++;
+    }
+    std::cout << max << std::endl;
+}
