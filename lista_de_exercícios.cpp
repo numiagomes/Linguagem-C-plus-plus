@@ -40,3 +40,27 @@ int main(){
     num_hrs_espera = posicao_fila/ num_atendimentos;
     cout << num_hrs_espera;
 }
+
+//Exercíco 8
+#include <iostream>
+
+using namespace std;
+
+int main()
+{int cruzeiro [6] = {2,2,2,2,2,2};
+int atletico [6] = {3,3,3,3,3,3};
+int america [6] = {4,2,3,0,0,0};
+int resultado_cru, resultado_atl, resultado_ame;
+resultado_cru =0; resultado_atl =0; resultado_ame = 0;
+int num_partida = 6;
+int contador = 0;
+while (contador<num_partida){
+    resultado_cru + cruzeiro[contador];
+    resultado_atl = resultado_atl+atletico[contador];
+    resultado_ame = resultado_ame + america[contador];
+    contador++;// o proprio contador +1
+    }
+    std::cout << resultado_ame << std::endl;// é mesma coisa do cout sozinho, só que fazendo referencia ao "pacote de onde ele vem"
+    std::cout << resultado_atl << std::endl;
+    std::cout << resultado_cru << std::endl;
+}
