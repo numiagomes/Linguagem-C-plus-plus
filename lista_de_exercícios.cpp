@@ -35,18 +35,87 @@ int main()
 /*Exercício 3 - Crie um programa em C++ com uma variável do tipo String, contendo um nome qualquer.
 Crie uma segunda variável do tipo Float, contendo o valor do salário dessa pessoa. Imprima:
 
-A pessoa <Nome da Pessoa>, recebe R$<Salário da pessoa>.
+A pessoa <Nome da Pessoa>, recebe R$<Salário da pessoa>.*/
 
-Exercício 4 - Crie um programa em C++ que compara o valor do salário de duas pessoas, e informa
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string funcionario = "João";
+    float salario = 2585.6;
+    cout << "O funcionário " << funcionario << " recebe R$ " << salario;
+    
+}
+
+
+/*Exercício 4 - Crie um programa em C++ que compara o valor do salário de duas pessoas, e informa
 qual salário é maior.
 
 Dica - Utilize a instrução if para fazer comparações e os operadores > ou < para comparar.*/
 
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float salario_1;
+    float salario_2;
+    cout <<"Digite o primeiro salário" "\n";
+    cin >> salario_1;
+    cout << "Digite o segundo salário""\n";
+    cin >> salario_2;
+    if (salario_1 > salario_2){
+        cout << "O maior salário é : "<< salario_1<< " e pertence ao primeiro funcionário inserido";
+        
+    }
+    
+        else if (salario_2> salario_1){
+            cout << " O maior salário é "<< salario_2 << " e pertence ao segundo funcionário inserido";
+            
+        }
+}
+
+
 /*Exercício 5 - Crie um programa em C++ que recebe a pontuação de um usuário e a de outro usuário
 e verifica quem ganhou o jogo, com base na maior pontuação.*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int pontos_p1;
+    int pontos_p2;
+    cout << "Qual foi a pontuação do primeiro participante?""\n" ;
+    cin >> pontos_p1;
+    cout << "Qual foi a pontuação do segundo participante?""\n" ;
+    cin >> pontos_p2;
+    if (pontos_p1 > pontos_p2){
+        cout << " O vencedor do jogo foi o participante 1, com " << pontos_p1 << " pontos.";
+    }
+        else if (pontos_p2 > pontos_p1){
+           cout << " O vencedor do jogo foi o participante 2, com " << pontos_p1 << " pontos."; 
+        }
+        else{
+            cout << "Os participantes terminaram o jogo empatados!";
+        }
+}
 
 /*Exercício 6 - Crie um vetor de elementos do tipo inteiro e imprima o primeiro e o último elemento
 desse vetor.*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int numeros [7] = {2,5,6,8,4,2,9};
+    cout << "O primeiro número declarado foi: " << numeros[0];
+    cout <<  "\n""O último número declarado foi: " << numeros[6];
+}
 
 /*Exercício 7 - Crie um vetor de elementos do tipo float, insira valores nesses elementos e faça um
 loop para imprimir cada um desses elementos.*/
