@@ -2,9 +2,35 @@
 //Lista de Exercícios
 
 /*Exercício 1 - Crie um programa em C++, que recebe uma palavra como parâmetro e imprime.*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    string palavra;
+    std::cout << "Digite uma palavra" << std::endl;
+    std::cin >> palavra;
+    
+    cout<<"Você digitou:"<< palavra;
+
+    return 0;
+}
 
 /*Exercício 2 - Crie um programa em C++ que atribui o valor 20 para uma variável inteira, o valor
 30 para outra variável inteira e some esses dois valores e armazene em outra variável.*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int p_numero = 20;
+    int s_numero = 30;
+    int soma_numeros = p_numero + s_numero;
+    cout << "A soma é: " << soma_numeros;
+    
+}
 
 /*Exercício 3 - Crie um programa em C++ com uma variável do tipo String, contendo um nome qualquer.
 Crie uma segunda variável do tipo Float, contendo o valor do salário dessa pessoa. Imprima:
