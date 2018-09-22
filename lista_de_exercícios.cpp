@@ -27,9 +27,44 @@ loop para imprimir cada um desses elementos.*/
 
 /*Exercício 8 - Três times de futebol participaram de 6 partidas. Crie vetores para simular os resultados
 desses jogos e imprima a pontuação obtida por cada time.*/
+#include <iostream>
+
+using namespace std;
+
+int main()
+{int cruzeiro [6] = {2,2,2,2,2,2};
+int atletico [6] = {3,3,3,3,3,3};
+int america [6] = {4,2,3,0,0,0};
+int resultado_cru, resultado_atl, resultado_ame;
+resultado_cru =0; resultado_atl =0; resultado_ame = 0;
+int num_partida = 6;
+int contador = 0;
+while (contador<num_partida){
+    resultado_cru + cruzeiro[contador];
+    resultado_atl = resultado_atl+atletico[contador];
+    resultado_ame = resultado_ame + america[contador];
+    contador++;// o proprio contador +1
+    }
+    std::cout << resultado_ame << std::endl;// é mesma coisa do cout sozinho, só que fazendo referencia ao "pacote de onde ele vem"
+    std::cout << resultado_atl << std::endl;
+    std::cout << resultado_cru << std::endl;
+}
 
 /*Exercício 9 - Cria um programa em C++ que possui uma variável inteira que se inicia com o valor 0.
 Faça com que ela acumule o valor 2 nela mesma ao longo de 20 iterações.*/
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int var = 0;
+    int controle=0;
+    int num_iteracoes = 20;
+    for (controle = 0; controle<num_iteracoes;controle++){
+        var = var+2;
+    }
+    cout<<var;}
 
 /*Dica: Em um loop podemos fazer uma variável receber o valor dela mesma mais o valor que se deseja
 acumular.*/
@@ -68,47 +103,6 @@ passageiros para serem transportados. Essa função deverá calcular se os aviõ
 pessoas, e caso não consiga, quantas ficarão para as próximas viagens. Faça uma simulação na qual os
 aviões comportam o número de pessoas e outra na qual ele não comporta.*/
 
-/*Exercício 15 - Um hospital consegue atender 20 pessoas por hora. Considerando que no momento em que
-o hospital foi aberto chegaram 100 pessoas, faça um programa para calcular quanto tempo o paciente com
-a senha 68 irá demorar para ser atendido.*/
-
-/*Dicas: Faça um loop while, que inicia com 20 pessoas sendo atendidas sem espera, e caminha de 20 em 20.
-A cada iteração ele deverá aumentar em 20 o número de pessoas sendo atendidas e em 1 o número de horas.
-Caso o número de pessoas atendidas seja maior do que o número da senha que se deseja verificar, isso
-indica que aquele paciente entrou em atendimento na iteração atual, e esperou o número de horas 
-acumuladas até o momento.*/
-
-/*Exercício 16 - Faça um programa em C++ que percorre um conjunto de números e informa qual deles é o
-maior.*/
-
-/*Exercício 17 - Faça um programa em C++ que executa a mesma operação do primeiro, porém informa a
-posição do maior número, e não o seu valor.*/
-
-/*Exercício 18 - Faça um ajuste no programa 16, para que ele também informe o menor valor da lista.*/
-
-/*Exercício 19 - A equipe de uma contrutora consegue entregar 100 metros quadrados construídos por dia.
-Com base nisso, faça um programa que possui uma função para efetuar o cálculo do tempo necessário
-para construir um projeto com 2326 metros quadrados. Esse tempo deve ser fornecido em dias.*/
-
-/*Exercício 20 - Gere um conjunto de 10 números inteiros de forma aleatória, e verifique qual é o maior
-valor gerado.*/
-
-
-
-//exercício 9
-#include <iostream>
-
-using namespace std;
-
-int main() {
-    int var = 0;
-    int controle=0;
-    int num_iteracoes = 20;
-    for (controle = 0; controle<num_iteracoes;controle++){
-        var = var+2;
-    }
-    cout<<var;}
-//exercício 14
 #include <iostream>
 
 using namespace std;
@@ -125,7 +119,11 @@ string total_avioes(int num_pessoas, int num_avioes){
      int num_avioes = 10;
      cout <<total_avioes(num_pessoas,num_avioes);
 }
-//exercício 15
+
+/*Exercício 15 - Um hospital consegue atender 20 pessoas por hora. Considerando que no momento em que
+o hospital foi aberto chegaram 100 pessoas, faça um programa para calcular quanto tempo o paciente com
+a senha 68 irá demorar para ser atendido.*/
+
 #include <iostream>
 
 using namespace std;
@@ -138,32 +136,32 @@ int main(){
     cout << num_hrs_espera;
 }
 
-//Exercíco 8
-#include <iostream>
+/*Dicas: Faça um loop while, que inicia com 20 pessoas sendo atendidas sem espera, e caminha de 20 em 20.
+A cada iteração ele deverá aumentar em 20 o número de pessoas sendo atendidas e em 1 o número de horas.
+Caso o número de pessoas atendidas seja maior do que o número da senha que se deseja verificar, isso
+indica que aquele paciente entrou em atendimento na iteração atual, e esperou o número de horas 
+acumuladas até o momento.*/
 
-using namespace std;
+/*Exercício 16 - Faça um programa em C++ que percorre um conjunto de números e informa qual deles é o
+maior.*/
 
-int main()
-{int cruzeiro [6] = {2,2,2,2,2,2};
-int atletico [6] = {3,3,3,3,3,3};
-int america [6] = {4,2,3,0,0,0};
-int resultado_cru, resultado_atl, resultado_ame;
-resultado_cru =0; resultado_atl =0; resultado_ame = 0;
-int num_partida = 6;
-int contador = 0;
-while (contador<num_partida){
-    resultado_cru + cruzeiro[contador];
-    resultado_atl = resultado_atl+atletico[contador];
-    resultado_ame = resultado_ame + america[contador];
-    contador++;// o proprio contador +1
+int main (){
+    int numeros [5] = {3,5,6,8,9};
+    int max = numeros[0];
+    int contador = 1;
+    int tamanho_numeros = 5;
+    while ( contador < tamanho_numeros){
+        if (numeros [contador]> max){
+            max = numeros;
+        }
+        contador ++;
     }
-    std::cout << resultado_ame << std::endl;// é mesma coisa do cout sozinho, só que fazendo referencia ao "pacote de onde ele vem"
-    std::cout << resultado_atl << std::endl;
-    std::cout << resultado_cru << std::endl;
+    std::cout << max << std::endl;
 }
 
+/*Exercício 17 - Faça um programa em C++ que executa a mesma operação do primeiro, porém informa a
+posição do maior número, e não o seu valor.*/
 
-//exercício 17
 int main (){
     int numeros [5] = {3,5,6,8,9};
     int max = numeros[0];
@@ -180,24 +178,14 @@ int main (){
     std::cout << posicao << std::endl;
 }
 
+/*Exercício 18 - Faça um ajuste no programa 16, para que ele também informe o menor valor da lista.*/
 
-//exercício 16
-int main (){
-    int numeros [5] = {3,5,6,8,9};
-    int max = numeros[0];
-    int contador = 1;
-    int tamanho_numeros = 5;
-    while ( contador < tamanho_numeros){
-        if (numeros [contador]> max){
-            max = numeros;
-        }
-        contador ++;
-    }
-    std::cout << max << std::endl;
-}
+/*Exercício 19 - A equipe de uma contrutora consegue entregar 100 metros quadrados construídos por dia.
+Com base nisso, faça um programa que possui uma função para efetuar o cálculo do tempo necessário
+para construir um projeto com 2326 metros quadrados. Esse tempo deve ser fornecido em dias.*/
 
-//Exercício 20
-
+/*Exercício 20 - Gere um conjunto de 10 números inteiros de forma aleatória, e verifique qual é o maior
+valor gerado.*/
 #include <iostream>
 
 using namespace std;
