@@ -118,7 +118,25 @@ int main()
 
 /*Exercício 7 - Crie um vetor de elementos do tipo float, insira valores nesses elementos e faça um
 loop para imprimir cada um desses elementos.*/
+#include <iostream>
 
+using namespace std;
+
+int main()
+{
+  float vetor[5];
+  int controle = 1;
+  cout << "Entre com os números para criar um vetor com cinco posições""\n";
+  cin >>vetor[0];"\n";
+  cin >>vetor[1];"\n";
+  cin >>vetor[2];"\n";
+  cin >>vetor[3];"\n";
+  cin >>vetor[4];"\n";
+  while(controle <=5){
+      cout<< "O número na posição "<< controle <<" é: "<<vetor[controle] <<"\n";
+      controle++;
+  }
+}
 
 /* Quis fazer de uma forma diferente:*/
 
@@ -171,6 +189,8 @@ while (contador<num_partida){
 /*Exercício 9 - Cria um programa em C++ que possui uma variável inteira que se inicia com o valor 0.
 Faça com que ela acumule o valor 2 nela mesma ao longo de 20 iterações.*/
 
+/*Dica: Em um loop podemos fazer uma variável receber o valor dela mesma mais o valor que se deseja
+acumular.*/
 #include <iostream>
 
 using namespace std;
@@ -184,9 +204,6 @@ int main() {
     }
     cout<<var;}
 
-/*Dica: Em um loop podemos fazer uma variável receber o valor dela mesma mais o valor que se deseja
-acumular.*/
-
 /*Exercício 10 - Pensando na mesma lógica do programa anterior, crie uma alteração no Exercício referente
 aos times, para que seja feita a soma das pontuações de cada um.*/
 
@@ -196,6 +213,23 @@ aos times, para que seja feita a soma das pontuações de cada um.*/
 foi aprovado, reprovado ou se está de exame especial em uma disciplina. Os critérios que devem
 ser considerados são: Nota acima de 70 indica aprovação, nota abaixo de 40 indica reprovação e
 nota entre 40 e 59 indica exame especial.*/
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double nota_al1;
+    cout << "Entre com a nota final do aluno""\n";
+    cin >>nota_al1;"\n";
+    if(nota_al1>= 70){
+        cout << " O aluno está aprovado!";}
+        else if (nota_al1 < 40){
+            cout << " O aluno foi reprovado!";}
+            else {
+               cout << "O aluno está em exame especial."; 
+            }
+}
 
 /*Dicas: Utilize o cin, para fazer a leitura da nota, conforme mostrado em sala.
 Utilize condições com o comando if para verificar a nota lida pelo comando cin.
@@ -211,9 +245,66 @@ ser verificada a aprovação do aluno.*/
 notas e faz o seu somatório.
 Depois utilize a função criada no exercício 1, para verificar a situação do aluno.*/
 
-/*Ecercício 13 - Um desenvolvedor recebe 50 reais por hora trabalhada. Considerando que ele trabalhada
+#include <iostream>
+using namespace std;
+
+ string situacao_aluno (int notas[], int cont, int soma_notas){
+    int notas[5];
+    int cont = 0;
+    soma_notas = 0;
+    for (cont= 0 ,cont <6, cont ++){
+       soma_notas = 0;
+       cout << "Digite as notas dos alunos";
+         cin >>soma_notas[cont];"\n";
+         soma_notas = soma_notas + notas [cont];
+    }
+    if(soma_notas >= 70){
+        cout << " O aluno está aprovado!";}
+        else if (soma_notas < 40){
+            cout << " O aluno foi reprovado!";}
+            else {
+               cout << "O aluno está em exame especial.";}
+ }
+            
+int main(){
+    float notas[5] = {20;25;15;18;16};
+    cout << situacao_aluno;
+}
+
+/*Exercício 13 - Um desenvolvedor recebe 50 reais por hora trabalhada. Considerando que ele trabalhada
 8 horas por dia, crie uma função que calcula quanto esse desenvolvedor recebeu no mês atual, considerando
 que ele trabalhou 22 dias nesse mês.*/
+
+#include <iostream>
+using namespace std;
+
+float salario (float valor_hora, float horas_dia, int dias_mes, string nome, string proximo){
+    
+    while(proximo != "não"){
+        cout << "Digite o nome do desenvolverdor?""\n";
+        cin >> nome;
+        cout <<"Quanto ele recebe por hora?""\n";
+        cin >>valor_hora;
+        cout << "Quantas horas ele trabalhou por dia?""\n";
+        cin >> horas_dia;
+        cout << "Quantos dias do mês ele trabalhou?""\n";
+        cin >> dias_mes;
+        cout << "O salário é: "<< valor_hora*horas_dia*dias_mes;"\n";
+        cout << "\n""Deseja calcular o salario de mais um desenvolverdor?(digite sim ou não)""\n";
+        cin >> proximo;
+    }
+    return 0;
+}
+
+int main(){
+    string nome = "";
+    float valor_hora = 0;
+    float horas_dia = 0;
+    int dias_mes = 0;
+    string proximo ="";
+    return salario(valor_hora, horas_dia,dias_mes,nome,proximo);
+}
+
 
 /*Exercício 14 - Uma empresa de aviação possui um tipo de avião que comporta 10 pessoas. Crie um programa
 que possui uma função, cujos parâmetros de entrada são: o número de aviões disponíveis e o número de
@@ -254,14 +345,14 @@ int main(){
     cout << num_hrs_espera;
 }
 
+
+/*Exercício 16 - Faça um programa em C++ que percorre um conjunto de números e informa qual deles é o
+maior.*/
 /*Dicas: Faça um loop while, que inicia com 20 pessoas sendo atendidas sem espera, e caminha de 20 em 20.
 A cada iteração ele deverá aumentar em 20 o número de pessoas sendo atendidas e em 1 o número de horas.
 Caso o número de pessoas atendidas seja maior do que o número da senha que se deseja verificar, isso
 indica que aquele paciente entrou em atendimento na iteração atual, e esperou o número de horas 
 acumuladas até o momento.*/
-
-/*Exercício 16 - Faça um programa em C++ que percorre um conjunto de números e informa qual deles é o
-maior.*/
 
 int main (){
     int numeros [5] = {3,5,6,8,9};
@@ -298,9 +389,47 @@ int main (){
 
 /*Exercício 18 - Faça um ajuste no programa 16, para que ele também informe o menor valor da lista.*/
 
+#include <iostream>
+
+using namespace std;
+        
+int* maxMin1 (int v[], int n) {
+         int max = v[0], min = v[0];
+         for (int i= 1; i<n; i++){
+         if (v[i]> max)max = v[i];
+         if (v[i]< min)min = v[i];
+         }
+     int *maxMin = new int[2];
+     maxMin[0] = max; maxMin[1] = min;
+     
+    return maxMin;
+    } 
+int main(){
+    int * v = new int [5];
+    int vetor[] ={3,5,6,8,9};
+     cout << "O maior valor é: "<< maxMin1(vetor,5)[0];"\n";
+     cout << "O menor valor é: " << maxMin1(vetor,5)[1];
+    return 0;
+    } 
 /*Exercício 19 - A equipe de uma contrutora consegue entregar 100 metros quadrados construídos por dia.
 Com base nisso, faça um programa que possui uma função para efetuar o cálculo do tempo necessário
 para construir um projeto com 2326 metros quadrados. Esse tempo deve ser fornecido em dias.*/
+
+#include <iostream>
+
+using namespace std;
+int main() {
+    int entrega_dia;
+    int metragem_final;
+    int tempo_total_obra;
+    cout <<"Qual foi a metragem final realizado no dia?""\n";
+    cin >> entrega_dia;
+    cout <<" Qual é a metragem total da obra finaliza?""\n";
+    cin >> metragem_final;
+    tempo_total_obra = metragem_final/entrega_dia;
+    cout << "O tempo total para entrega da obra é: " << tempo_total_obra;
+        
+    }
 
 /*Exercício 20 - Gere um conjunto de 10 números inteiros de forma aleatória, e verifique qual é o maior
 valor gerado.*/
