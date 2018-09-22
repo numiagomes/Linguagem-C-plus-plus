@@ -78,7 +78,6 @@ int main()
         }
 }
 
-
 /*Exercício 5 - Crie um programa em C++ que recebe a pontuação de um usuário e a de outro usuário
 e verifica quem ganhou o jogo, com base na maior pontuação.*/
 #include <iostream>
@@ -119,6 +118,30 @@ int main()
 
 /*Exercício 7 - Crie um vetor de elementos do tipo float, insira valores nesses elementos e faça um
 loop para imprimir cada um desses elementos.*/
+
+
+/* Quis fazer de uma forma diferente:*/
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+  float vetor[5];
+  int controle = 0;
+  cout << "Entre com os números para criar um vetor com cinco posições""\n";
+  cin >>vetor[0];"\n";
+  cin >>vetor[1];"\n";
+  cin >>vetor[2];"\n";
+  cin >>vetor[3];"\n";
+  cin >>vetor[4];"\n";
+  cout << "Seu vetor é: { " << vetor[0]<<", ";
+  cout << vetor[1]<<", ";
+  cout <<vetor[2]<<", ";
+  cout <<vetor[3]<<", ";
+  cout <<vetor[4] << "}";
+}
 
 /*Exercício 8 - Três times de futebol participaram de 6 partidas. Crie vetores para simular os resultados
 desses jogos e imprima a pontuação obtida por cada time.*/
