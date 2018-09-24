@@ -50,27 +50,22 @@ float cadastro (string nome, int cpf, string nacionalidade, int identidade,strin
     cin >> salario;
     cout << "Deseja cadastrar outro funcinário? ( sim ou não)""\n";
     cin >> proximo;
-        
-     if ( pais == "Brasil"){
-        cout << "Este funcionário é residente do " <<pais;
     }
+ if ( pais == "Brasil"){
+        cout << "Este funcionário é residente do " <<pais;
+ }
  if (salario <= 1693.72, pais == "Brasil""\n"){
             desconto = (salario * 0.08);
-            
-        }
-            else if (1693.73 < salario >= 2822.90){
+ }
+ else if (1693.73 < salario >= 2822.90){
                 desconto = (salario * 0.09);
-                
-            }
-                else if ( salario > 2822.90) 
-                {desconto = (salario * 0.11);
-                
-                }
-                else {desconto = 0;
-                    
-                }
-                cout << "O desconto em folha para o INSS será: ""\n"<< salario;
-    }
+ }
+ else if ( salario > 2822.90){
+                desconto = (salario * 0.11);
+ }
+ else {desconto = 0;
+      }
+ cout << "O desconto em folha para o INSS será: ""\n"<< salario;
     return 0;
 }
 int main(){ 
