@@ -2,7 +2,7 @@
 O primeiro requisito é o preeenchimento de informações do funcionário. Para isso, implemente uma coleta de informações, para os seguintes dados:
 nome, cpf, nacionalidade, identidade, pais, estado, cidade, rua, número e salário. OK!
 Uma vez que as informações foram fornecidas, verifique se o funcionário é do Braisl. Caso seja, imprima um texto com essa informação
-para o funcionário do RH.
+para o funcionário do RH.OK!
 Faça o cálculo do desconto em folha, devido ao INSS, segundo a tabela abaixo:
  Salário (R$)              Desconto
  até 1693,72                 8%
@@ -54,6 +54,19 @@ float cadastro (string nome, int cpf, string nacionalidade, int identidade,strin
     }
      if ( pais == "Brasil"){
         cout << "Este funcionário é residente do " <<pais;
+    }
+ if (salario <= 1693.72, pais == "Brasil"){
+            desconto = salario*0.08;
+            
+        }
+            else if (1693.73 < salario >= 2822.90){
+                desconto = salario*0.09;
+                
+            }
+                else {desconto = salario*0.11;
+                    
+                }
+                cout << "O desconto em folha para o INSS será: "<< salario;
     }
     return 0;
 }
