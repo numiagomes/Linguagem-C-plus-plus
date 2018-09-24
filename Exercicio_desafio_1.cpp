@@ -24,7 +24,7 @@ Faça o cálculo do desconto em folha, devido ao INSS, segundo a tabela abaixo:
 
 using namespace std;
 
-float cadastro (string nome, int cpf, string nacionalidade, int identidade,string pais, string estado, string cidade, string rua, int numero, string complemento, double salario, string proximo, double desconto){
+float cadastro (string nome, double cpf, string nacionalidade, int identidade,string pais, string estado, string cidade, string rua, int numero, string complemento, double salario, string proximo, double desconto){
     while (proximo != "não"){
     cout << " Preencha as informações refente ao funcionário.""\n" "Nome completo:""\n";
     cin >> nome;
@@ -70,7 +70,7 @@ float cadastro (string nome, int cpf, string nacionalidade, int identidade,strin
 }
 int main(){ 
     string nome ="";
-    int cpf = 0;
+    double cpf = 0;
     string nacionalidade = "";
     int identidade = 0;
     string pais =""; 
