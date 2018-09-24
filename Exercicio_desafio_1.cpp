@@ -65,7 +65,7 @@ float cadastro (string nome, double cpf, string nacionalidade, int identidade,st
  }
  else {desconto = 0;
       }
- cout << "O desconto em folha para o INSS será: ""\n"<< salario;
+ cout << "O desconto em folha para o INSS será: ""\n"<< desconto;
     return 0;
 }
 int main(){ 
