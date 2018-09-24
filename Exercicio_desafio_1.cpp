@@ -52,7 +52,7 @@ float cadastro (string nome, int cpf, string nacionalidade, int identidade,strin
     cin >> proximo;
         
     }
-     if ( pais = "Brasil"){
+     if ( pais == "Brasil"){
         cout << "Este funcionário é residente do " <<pais;
     }
     return 0;
