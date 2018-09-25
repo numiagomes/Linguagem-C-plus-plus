@@ -1,8 +1,8 @@
 /*Uma empresa precisa cadastrar alguns dados de seus funcionários e fazer alguns cálculos.
 O primeiro requisito é o preeenchimento de informações do funcionário. Para isso, implemente uma coleta de informações, para os seguintes dados:
-nome, cpf, nacionalidade, identidade, pais, estado, cidade, rua, número e salário. OK!
+nome, cpf, nacionalidade, identidade, pais, estado, cidade, rua, número e salário. OK! (verificar pq o nome e complemento não aceita espaço)
 Uma vez que as informações foram fornecidas, verifique se o funcionário é do Braisl. Caso seja, imprima um texto com essa informação
-para o funcionário do RH.OK!
+para o funcionário do RH.OK! 
 Faça o cálculo do desconto em folha, devido ao INSS, segundo a tabela abaixo:
  Salário (R$)              Desconto
  até 1693,72                 8%
@@ -65,7 +65,9 @@ float cadastro (string nome, double cpf, string nacionalidade, int identidade,st
  }
  else {desconto = 0;
       }
- cout << "O desconto em folha para o INSS será: ""\n"<< desconto;
+cout << "O funcionário " << nome<< " que possui CPF "<< cpf<< " e identidade "<< identidade<<"."<< nacionalidade<< " residente no seguinte endereço rua"<<rua<<", "<< 
+ numero<<", "<<complemento<<", "<<cidade<<", "<<estado<<", "<<pais<<"\n" "Tem salário " << salario<< " e seu desconto em folha para o INSS será: "<< desconto;
+
     return 0;
 }
 int main(){ 
