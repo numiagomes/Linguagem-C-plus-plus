@@ -36,14 +36,14 @@ float cadastro (string nome, long int cpf, string nacionalidade, long int identi
     cin.ignore();
     cout << "Indentidade:""\n";
     cin >> identidade;
+    cin.ignore();
     cout << "Endereço completo""\n""País:""\n";
     getline (cin,pais);
-    cin.ignore();
     cout << "Estado:""\n";
     getline (cin,estado);
     cout << "Cidade:""\n";
     getline (cin,cidade);
-    cout << "Rua:""\n";
+    cout << "Logradouro:""\n";
     getline (cin,rua);
     cin.ignore();
     cout << "Número:""\n";
@@ -71,7 +71,7 @@ float cadastro (string nome, long int cpf, string nacionalidade, long int identi
  }
  else {desconto = 0;
       }
- cout << "O funcionário " << nome<< " que possui CPF "<< cpf<< " e identidade "<< identidade<<". "<< nacionalidade<< " residente na "<<rua<<", "<< 
+ cout << "O funcionário " << nome<< " que possui CPF "<< cpf<< " e identidade "<< identidade<<", é "<< nacionalidade<< " residente na "<<rua<<", "<< 
  numero<<", "<<complemento<<", "<<cidade<<", "<<estado<<", "<<pais<<"\n" "Tem salário " << salario<< " e seu desconto em folha para o INSS será: "<< desconto<<".";
 
  if (salario <= 1500){
@@ -120,6 +120,4 @@ int main(){
     double desconto = 0;
     return cadastro (nome, cpf, nacionalidade, identidade, pais, estado, cidade, rua, numero, complemento, salario, proximo, desconto);
 }
-
-
 
