@@ -26,26 +26,26 @@ using namespace std;
 
 float cadastro (string nome, double cpf, string nacionalidade, int identidade,string pais, string estado, string cidade, string rua, int numero, string complemento, double salario, string proximo, double desconto){
     while (proximo != "não"){
-    cout << " Preencha as informações refente ao funcionário.""\n" "Nome completo:""\n";
-    cin >> nome;
+   cout << " Preencha as informações refente ao funcionário.""\n" "Nome completo:""\n";
+    getline (cin,nome);
     cout << "CPF (somente os números):""\n";
     cin >> cpf;
-    cout << "Nacionalidade:.""\n";
-    cin >> nacionalidade;
+    cout << "Nacionalidade:""\n";
+    getline (cin,nacionalidade);
     cout << "Indentidade:""\n";
     cin >> identidade;
     cout << "Endereço completo""\n""País:""\n";
-    cin >> pais;
+    getline (cin,pais);
     cout << "Estado:""\n";
-    cin >> estado;
+    getline (cin,estado);
     cout << "Cidade:""\n";
-    cin >> cidade;
+    getline (cin,cidade);
     cout << "Rua:""\n";
-    cin >> rua;
+    getline (cin,rua);
     cout << "Número:""\n";
     cin >> numero;
     cout << "Complemento:""\n";
-    cin >> complemento;
+    getline (cin,complemento);
     cout << "Salário:""\n";
     cin >> salario;
     cout << "Deseja cadastrar outro funcinário? ( sim ou não)""\n";
