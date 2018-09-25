@@ -19,11 +19,6 @@ Faça o cálculo do desconto em folha, devido ao INSS, segundo a tabela abaixo:
  level 8 - 30001 a 50000 - diretor de ti sênior
  level 9 - 50001 a 100000 - Presidente*/
 
-
-#include <iostream>
-
-using namespace std;
-
 #include <iostream>
 
 using namespace std;
