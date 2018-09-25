@@ -1,8 +1,8 @@
 /*Uma empresa precisa cadastrar alguns dados de seus funcionários e fazer alguns cálculos.
 O primeiro requisito é o preeenchimento de informações do funcionário. Para isso, implemente uma coleta de informações, para os seguintes dados:
-nome, cpf, nacionalidade, identidade, pais, estado, cidade, rua, número e salário. OK! (verificar pq o nome e complemento não aceita espaço)
+nome, cpf, nacionalidade, identidade, pais, estado, cidade, rua, número e salário. OK!
 Uma vez que as informações foram fornecidas, verifique se o funcionário é do Braisl. Caso seja, imprima um texto com essa informação
-para o funcionário do RH.OK! (resolver bug de leitura dos numeros em cpf e identidade)
+para o funcionário do RH.OK! 
 Faça o cálculo do desconto em folha, devido ao INSS, segundo a tabela abaixo:
  Salário (R$)              Desconto
  até 1693,72                 8%
@@ -17,7 +17,8 @@ Faça o cálculo do desconto em folha, devido ao INSS, segundo a tabela abaixo:
  Level 6 -  de 10001 a 1500 - GP sênior
  Level 7 - de 15001 a 30000 - diretor de ti
  level 8 - 30001 a 50000 - diretor de ti sênior
- level 9 - 50001 a 100000 - Presidente*/
+ level 9 - 50001 a 100000 - Presidente
+ conferir o problema de dar dois enter neste link https://pt.wikibooks.org/wiki/Programar_em_C%2B%2B/Entrada_e_sa%C3%ADda_de_dados*/
 
 #include <iostream>
 
