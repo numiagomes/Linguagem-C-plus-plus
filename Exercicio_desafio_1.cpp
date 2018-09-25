@@ -65,7 +65,7 @@ float cadastro (string nome, double cpf, string nacionalidade, int identidade,st
  }
  else {desconto = 0;
       }
-cout << "O funcionário " << nome<< " que possui CPF "<< cpf<< " e identidade "<< identidade<<"."<< nacionalidade<< " residente no seguinte endereço rua"<<rua<<", "<< 
+ cout << "O funcionário " << nome<< " que possui CPF "<< cpf<< " e identidade "<< identidade<<"."<< nacionalidade<< " residente no seguinte endereço rua "<<rua<<", "<< 
  numero<<", "<<complemento<<", "<<cidade<<", "<<estado<<", "<<pais<<"\n" "Tem salário " << salario<< " e seu desconto em folha para o INSS será: "<< desconto;
 
     return 0;
