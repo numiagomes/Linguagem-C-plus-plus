@@ -35,6 +35,7 @@ float cadastro (string nome, long int cpf, string nacionalidade, long int identi
     cin.ignore();
     cout << "CPF (somente os números):""\n";
     cin >> cpf;
+    cin.ignore();
     cout << "Nacionalidade:""\n";
     getline (cin, nacionalidade);
     cin.ignore();
