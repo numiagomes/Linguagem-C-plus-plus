@@ -120,3 +120,6 @@ int main(){
     double desconto = 0;
     return cadastro (nome, cpf, nacionalidade, identidade, pais, estado, cidade, rua, numero, complemento, salario, proximo, desconto);
 }
+
+
+
