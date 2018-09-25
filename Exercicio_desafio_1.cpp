@@ -33,12 +33,12 @@ float cadastro (string nome, double cpf, string nacionalidade, int identidade,st
     cin >> cpf;
     cout << "Nacionalidade:";
     getline (cin, nacionalidade);
-    cin.ignore();
+    
     cout << "Indentidade:""\n";
     cin >> identidade;
     cout << "Endereço completo""\n""País:""\n";
     getline (cin,pais);
-    cin.ignore();
+    
     cout << "Estado:""\n";
     getline (cin,estado);
     cout << "Cidade:""\n";
@@ -50,7 +50,7 @@ float cadastro (string nome, double cpf, string nacionalidade, int identidade,st
     cin >> numero;
     cout << "Complemento:""\n";
     getline (cin,complemento);
-    cin.ignore();
+    
     cout << "Salário:""\n";
     cin >> salario;
     cout << "Deseja cadastrar outro funcinário? ( sim ou não)""\n";
