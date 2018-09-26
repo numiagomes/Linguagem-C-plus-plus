@@ -29,6 +29,7 @@ float cadastro (string nome, long int cpf, string nacionalidade, long int identi
    cout << " Preencha as informações refente ao funcionário.""\n" "Nome completo:""\n";
     getline (cin,nome);
     cin.ignore();
+     if (nome != "\n")
     cout << "CPF (somente os números):""\n";
     cin >> cpf;
     cin.ignore();
