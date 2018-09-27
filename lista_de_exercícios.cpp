@@ -245,31 +245,7 @@ ser verificada a aprovação do aluno.*/
 notas e faz o seu somatório.
 Depois utilize a função criada no exercício 1, para verificar a situação do aluno.*/
 
-#include <iostream>
-using namespace std;
-
- string situacao_aluno (int notas[], int cont, int soma_notas){
-    int notas[5];
-    int cont = 0;
-    soma_notas = 0;
-    for (cont= 0 ,cont <6, cont ++){
-       soma_notas = 0;
-       cout << "Digite as notas dos alunos";
-         cin >>soma_notas[cont];"\n";
-         soma_notas = soma_notas + notas [cont];
-    }
-    if(soma_notas >= 70){
-        cout << " O aluno está aprovado!";}
-        else if (soma_notas < 40){
-            cout << " O aluno foi reprovado!";}
-            else {
-               cout << "O aluno está em exame especial.";}
- }
-            
-int main(){
-    float notas[5] = {20;25;15;18;16};
-    cout << situacao_aluno;
-}
+REFAZER
 
 /*Exercício 13 - Um desenvolvedor recebe 50 reais por hora trabalhada. Considerando que ele trabalhada
 8 horas por dia, crie uma função que calcula quanto esse desenvolvedor recebeu no mês atual, considerando
